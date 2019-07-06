@@ -1,73 +1,61 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="utf-8" http-equiv="X-UA-Compatible" content="IE=8;FF=3;OtherUA=4">
+  <meta charset="utf-8" http-equiv="X-UA-Compatible" content="IE=8;FF=3;OtherUA=4">
 
-    <title>Dashboards</title>
+  <title>Dashboards</title>
 
-    <script src="d3/d3.js"></script>
-    <script src="crossfilter/crossfilter.js" type="text/javascript"></script>
-    <script src="js/jquery-1.11.3.min.js" type="text/javascript"></script>
-    <script src="lib/DataTables/datatables.js" type="text/javascript"></script>
-    <script src="bootstrap/js/bootstrap.js" type="text/javascript"></script>
-    <script src="lib/AutoComplete/dist/jquery.autocomplete.min.js"></script>
-    <script src="angular/angular.js" type="text/javascript"></script>
-    <script src="lib/DataStructures.Tree/js/vendor/base.js" type="text/javascript"></script>
-    <script src="lib/DataStructures.Tree/js/lib/DataStructures.Tree.js"></script>
+  <script src="d3/d3.js"></script>
+  <script src="crossfilter/crossfilter.js" type="text/javascript"></script>
+  <script src="lib/jquery-1.11.3.min.js" type="text/javascript"></script>
+  <script src="lib/DataTables/datatables.js" type="text/javascript"></script>
+  <script src="bootstrap/js/bootstrap.js" type="text/javascript"></script>
 
-    <link href="bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css">
-    <link href="bootstrap/css/bootstrap-theme.css" rel="stylesheet" type="text/css">
-    <link href="lib/DataTables/datatables.css" rel="stylesheet" type="text/css">
-    <link href="css/DataTables-1.10.12/css/dataTables.bootstrap.css" rel="stylesheet" type="text/css">
-    <link href="css/DataTables-1.10.12/css/dataTables.jqueryui.css" rel="stylesheet" type="text/css">
-    <link href="css/DataTables-1.10.12/css/jquery.dataTables_themeroller.css" rel="stylesheet" type="text/css">
-    <link href="lib/AutoComplete/content/styles.css" rel="stylesheet">
-    <link href="css/layout.css" rel="stylesheet" type="text/css">
+  <link href="bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css">
+  <link href="bootstrap/css/bootstrap-theme.css" rel="stylesheet" type="text/css">
+  <link href="css/DataTables-1.10.12/css/dataTables.jqueryui.css" rel="stylesheet" type="text/css">
+  <link href="css/layout.css" rel="stylesheet" type="text/css">
 
-  </head>
+</head>
 
-  <body>
+<body>
 
-    <!-- BY PROGRAM -->
-    <div class="container" id="program-container">
-      <div class="row">
-        <div class="col-lg-5" >
-          <div id="main_arc_display"></div>
-        </div>
-        <!-- col -->
+  <!-- BY PROGRAM -->
+  <div class="container" id="program-container">
+    <div class="row">
+      <div class="col-lg-5">
+        <div id="main_arc_display"></div>
+      </div>
+      <!-- col -->
 
-        <div class="col-lg-7">
-          <div id="arc_display"></div>
-
-        </div>
-        <!-- col -->
+      <div class="col-lg-7">
+        <div id="arc_display"></div>
 
       </div>
-        <!-- row -->
-
-            <div class="row">
-            <table class="table table-hover dc-datatable-program display" width="100%">
-              <H3>DATA TABLE
-                <a><span class="glyphicon glyphicon-info-sign" data-placement="bottom" data-trigger="hover" data-toggle="popover" data-content="Data is updated from the charts above.  Use the search bar to better refine what you are lookinng for.  All columns can be sorted by clicking the sorting icon next to the title.  Clicking on the down arrow brings up additional information for each entry."></span></a>
-              </H3>
-              <thead>
-                <tr class='header'>
-                  <th>PROGRAM/ITAAC</th>
-                  <th>TITLE</th>
-                  <th>UNIT</th>
-                  <th>STATUS</th>
-                  <th>DEADLINE</th>
-                  <th>MILESTONE</th>
-                </tr>
-              </thead>
-            </table>
-          </div>
+      <!-- col -->
 
     </div>
-    <!-- container -->
+    <!-- row -->
 
-    <script type="text/javascript", src="allByPrograms.js"></script>
+    <div class="row">
+      <table class="table table-hover" id="datatable" width="100%">
+        <thead>
+          <tr class='header'>
+            <th>PROGRAM</th>
+            <th>ACTIVITY</th>
+            <th>STATUS</th>
+            <th>DEADLINE</th>
+          </tr>
+        </thead>
+      </table>
+    </div>
 
-  </body>
+  </div>
+  <!-- container -->
 
-  </html>
+  <script type="text/javascript" , src="programs.js"></script>
+
+</body>
+
+</html>

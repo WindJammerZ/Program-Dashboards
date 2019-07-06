@@ -1,149 +1,21 @@
-/* Move down content because we have a fixed navbar that is 50px tall */
-body {
-  padding-top: 60px;
-  font: 'Lato',sans-serif;
+.dataTables tbody {
+  height: 80px;
 }
 
-a:hover {
-  cursor: pointer;
+.perc_title,
+.perc_value {
+  pointer-events: none;
+  user-select: none;
 }
 
-td.details-control {
-  background:  url('DataTables-1.10.12/images/sort_desc.png') no-repeat center center;
-  cursor: pointer;
-}
-tr.shown td.details-control {
-  background:  url('DataTables-1.10.12/images/sort_asc.png') no-repeat center center;
-}
-
-#sunburst-chart path{
-  cursor: pointer;
-  stroke: white;
-  stroke-width: 1;
-  fill-rule: evenodd;
-}
-
-#info-itaac-table{
-  width: 100%;
-}
-
-#info-itaac-table th{
-  border-bottom: 1px solid #ddd;
-  background-color: #2575f7;
-  color: white;
-  width: 100px;
-
-}
-
-#info-itaac-table tr{
-  border-bottom: 1px solid #ddd;
-
-}
-
-#info-itaac-table th, tr{
-  border-bottom: 1px solid #ddd;
-  padding: 5px;
-  padding-left: 10px;
-  text-align: left;
-}
-
-.boldDetail{
-  font-weight: bold;
-}
-
-.normalDetail{
-  font-weight: normal;
-}
-
-.title{
-  text-align: left;
-  margin-left: 40px;
-  font-weight: bold;
-}
-
-.axis path, .axis line {
-  fill: none;
-  stroke: #000;
-  shape-rendering: crispEdges;
-}
-
-.axis text {
-  font: 10px sans-serif;
-}
-
-.tip .title{
-  font-weight: bold;
-  color: #f0027f;
-}
-
-.dataTables tbody{
-    height: 80px;
-}
-
-.dc-chart g.row text {
-  fill:black;
-  font-weight: bold;
-}
-
-.dc-chart g.pie-label-group text {
-  fill:black;
-  font-weight: bold;
-}
-
-input[type="checkbox"]:focus {
-    outline: 0 none;
-}
-
-.not_selected{
-  background-color: lightgray !important;
-  /* border-color: black; */
-}
-
-.heat-box {
-  stroke: #E6E6E6;
-  stroke-width: 2px;
-}
-
-.red_row {
-  background-color: red;
-}
-
-.col-prog-status-left {
-  padding-right:0;
-}
-
-.col-prog-status-right {
-  padding-left:0;
-}
-
-.program_arc_selected{
+.program_arc_selected {
   fill: yellow;
 }
 
-  .program_total_foreground {
-    fill: #2E7AF9;
-  }
+.program_total_foreground {
+  fill: #2E7AF9;
+}
 
-  .program_total_background {
-    fill: #DFEAFD;
-  }
-
-  .program_total_text {
-    font-family: 'Georgia' sans-serif;
-    font-size: 90px;
-  }
-
-  .program_total_text2 {
-    font-family: 'Georgia' sans-serif;
-    font-size: 20px;
-  }
-
-  .small_program_total_text {
-    font-family: 'Georgia' sans-serif;
-    font-size: 20px;
-  }
-
-  .small_program_total_text2_small {
-    font-family: 'Georgia' sans-serif;
-    font-size: 5px;
-  }
+.program_total_background {
+  fill: #DFEAFD;
+}
